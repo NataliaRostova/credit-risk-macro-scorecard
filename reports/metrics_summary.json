@@ -1,0 +1,51 @@
+{
+  "dev_samples": 5000,
+  "oot_samples": 1500,
+  "dev_default_rate_pct": 4.14,
+  "oot_default_rate_pct": 4.8,
+  "selected_features_count": 7,
+  "iv_ranking": {
+    "debt_to_asset_pct": 0.4531,
+    "credit_utilization_pct": 0.3151,
+    "ocf_to_debt": 0.3088,
+    "interest_coverage": 0.1281,
+    "roe_pct": 0.0912,
+    "current_ratio": 0.0811,
+    "delinquency_count_12m": 0.0625,
+    "revenue_yoy_pct": 0.0298
+  },
+  "auc_train": 0.8089,
+  "auc_test": 0.7355,
+  "auc_oot": 0.7362,
+  "gini_oot": 0.4724,
+  "ks_test": 0.4121,
+  "ks_oot": 0.4241,
+  "psi_oot": 0.0318,
+  "top20_bad_capture_pct": 47.2,
+  "stress_testing": [
+    {
+      "scenario": "Baseline (Current)",
+      "avg_pd_pct": 5.06,
+      "lgd_pct": 45.0,
+      "total_ead_mn_rmb": 15001.5,
+      "portfolio_ecl_mn_rmb": 344.62,
+      "ecl_rate_bps": 229.7
+    },
+    {
+      "scenario": "Adverse (+100bps / -8% Rev)",
+      "avg_pd_pct": 6.77,
+      "lgd_pct": 50.0,
+      "total_ead_mn_rmb": 15001.5,
+      "portfolio_ecl_mn_rmb": 516.6,
+      "ecl_rate_bps": 344.4
+    },
+    {
+      "scenario": "Severely Adverse (+200bps / -18% Rev)",
+      "avg_pd_pct": 9.31,
+      "lgd_pct": 55.0,
+      "total_ead_mn_rmb": 15001.5,
+      "portfolio_ecl_mn_rmb": 785.69,
+      "ecl_rate_bps": 523.7
+    }
+  ]
+}
